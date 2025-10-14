@@ -1,0 +1,6 @@
+version: 1
+unique_name: atscale_from_scratch
+object_type: catalog
+label: atscale_from_scratch
+aggressive_agg_promotion: false
+build_speculative_aggs: true

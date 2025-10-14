@@ -1,0 +1,6 @@
+unique_name: dimorder_dimension
+object_type: dimension
+label: dimorder_dimension
+hierarchies: []
+level_attributes: []
+type: standard

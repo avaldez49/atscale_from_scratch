@@ -1,0 +1,6 @@
+unique_name: dimproduct_dimension
+object_type: dimension
+label: dimproduct_dimension
+hierarchies: []
+level_attributes: []
+type: standard
