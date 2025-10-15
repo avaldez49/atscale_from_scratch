@@ -2,12 +2,36 @@ unique_name: atscale_from_scratch
 object_type: model
 label: atscale_from_scratch
 dimensions: []
-metrics: []
+metrics:
+  - unique_name: New Metric
 relationships:
-  - unique_name: factinternetsales_empty_dimension
+  - unique_name: >-
+      factinternetsales_productkey_to_dimproduct_dimension_dimproduct_dimension
+      Level
     from:
       dataset: factinternetsales
-      join_columns: []
+      join_columns:
+        - productkey
     to:
-      dimension: ''
-      level: ''
+      dimension: dimproduct_dimension
+      level: dimproduct_dimension Level
+  - unique_name: >-
+      factinternetsales_customerkey_to_dimcustomer_dimension_dimcustomer_dimension
+      Level
+    from:
+      dataset: factinternetsales
+      join_columns:
+        - customerkey
+    to:
+      dimension: dimcustomer_dimension
+      level: dimcustomer_dimension Level
+  - unique_name: >-
+      factinternetsales_orderdate_to_dim_date_day_dimension_dim_date_day_dimension
+      Level
+    from:
+      dataset: factinternetsales
+      join_columns:
+        - orderdatekey
+    to:
+      dimension: dim_date_day_dimension
+      level: dim_date_day_dimension Level

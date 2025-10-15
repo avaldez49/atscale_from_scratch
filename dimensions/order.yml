@@ -1,0 +1,19 @@
+unique_name: order
+object_type: dimension
+label: order
+hierarchies:
+  - unique_name: order Hierarchy
+    label: order Hierarchy
+    levels:
+      - unique_name: order Level
+level_attributes:
+  - unique_name: order Level
+    label: order Level
+    contains_unique_names: false
+    dataset: dimorder
+    is_unique_key: false
+    key_columns:
+      - salesordernumber
+    name_column: salesordernumber
+relationships: []
+type: standard
